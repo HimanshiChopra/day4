@@ -1,0 +1,160 @@
+#include <stdio.h>
+
+int main() {
+    int a[5]={1,2,3,4,5};
+    int i,search_key,start,end,mid,flag=0;
+    printf("enter array elements");
+    for(i=0;i<5;i++)
+    scanf("%d",a[i]);
+    printf("enter key to be searched");
+    scanf("%d",&search_key);
+    start=0;
+    end=5;
+    mid=(start+end)/2;
+    while(start<=end)
+    {
+        if(search_key==a[mid])
+        {
+            printf("element found");
+            flag=1;
+            break;
+        }
+        else if (search_key<a[mid])
+        end=mid-1;
+        else if (search_key>a[mid])
+        start=mid+1;
+        mid=(start+end)/2;
+    }
+    if(flag==0)
+    printf("search_key not found");
+
+    return 0;
+}
+//2nd prog
+#include <stdio.h>
+
+int main() {
+    int a[5],i,search_key,flag; 
+ printf("enter array elements");
+ for(i=0;i<=5;i++)
+ scanf("%d",&a[i]);
+ printf("enter key to be searched");
+ scanf("%d",&search_key);
+ for(i=0;i<=5;i++)
+ {
+     if(search_key==a[i])
+     {
+          flag=1;
+         break;
+        
+     }
+     else
+     continue;
+ }
+ return 0;
+}
+//3
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int n, sum=0, first_dig, last_dig;
+   
+    scanf("%d",&n);
+    last_dig=n%10;
+    while(n>=10)
+    {
+        n=n/10;
+    }
+    first_dig=n;
+    sum=first_dig+last_dig;
+    {
+        printf("%d",sum);
+        return 0;
+    }
+}
+//4TH PROGRAM
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int n, array[20];
+    int i;
+    int largest, sec_largest;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&array[i]);
+    }
+    largest=array[0];
+    sec_largest=array[0];
+    for(i=0;i<n;i++){
+        if(largest<array[i]){
+            largest=array[i];
+        }
+    }
+    for(i=0;i<n;i++){
+        if(sec_largest<array[i] && array[i]!=largest){
+        sec_largest=array[i];
+        }
+    }
+    printf("%d\n%d",largest,sec_largest);
+    
+    return 0;
+}
+//5TH PROG
+#include <stdio.h>
+
+void main() {
+    int a[5],i,search_key,flag; 
+ printf("enter array elements");
+ for(i=o;i<=5;i++)
+ scanf("%d",&a[i]);
+ printf("enter key to be searched");
+ scanf("%d",&search_key);
+ for(i=o;i<=5;i++)
+ {
+     if(search_key==a[i])
+     {
+          flag=1;
+         break;
+        
+     }
+     else
+     continue;
+ }
+ return 0;
+}
+#include <stdio.h>
+
+void main() {
+    int a[5],i,search_key,flag; 
+ printf("enter array elements");
+ for(i=o;i<=5;i++)
+ scanf("%d",&a[i]);
+ printf("enter key to be searched");
+ scanf("%d",&search_key);
+ for(i=o;i<=5;i++)
+ {
+     if(search_key==a[i])
+     {
+          flag=1;
+         break;
+        
+     }
+     else
+     continue;
+ }
+ return 0;
+}
+
+
